@@ -1,0 +1,183 @@
+/*================================ RESETS ==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+:root {
+    /*================== VARIABLES =================*/
+
+    /*======= COLORS =======*/
+    
+    /* PRIMARY */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    /* NEUTRAL */
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+
+    /* TYPOGRAPHY */
+    --heading-font: 'Fraunces', serif;
+    /*=============== END OF VARIABLES ==============*/
+}
+
+h1, h2 , .learn-more{
+    font-family: var(--heading-font);
+    font-weight: 900;
+    line-height: 1.1;
+}
+/* I MIGHT REFACTOR CODE BELOW*/ 
+p {
+    color: var(--Grayish-blue);
+}
+
+
+.media__title, 
+.learn-more, .user__name {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    padding: 1.5rem;
+}
+
+
+.hero__title {
+    color: var(--White);
+    font-size: 2.3rem;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-top: 140px;
+    text-transform: uppercase;
+}
+
+
+.hero__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;    
+    background-image: image-set(
+    url("../images/mobile/image-header.jpg") 1x);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.hero__arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    position:absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   /* add padding on parent so logo and menu doesn't touch */
+}
+
+.nav__list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    transform: translateX(100%);
+}
+
+.media {
+    text-align: center;
+}
+
+.media__title {
+    margin-bottom: 20px;
+}
+
+
+.media__img {
+    width: 100%;
+}
+
+.media__title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.media-content {
+    padding: 4.44em 2.22em;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.media__text {
+    font-size: 1.2rem;
+}
+
+.learn-more {
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.learn-more::after {
+    content: "";
+    display: block;
+    height: 8px;
+    width: inherit;
+    background-color: pink;
+    border-radius: 10px;
+    margin: -5px;
+}
+
+
+.learn-more.learn-more--1::after {
+    background-color: var(--yellow);
+}
+
+.learn-more.learn-more--2::after {
+    background-color: var(--soft-red);
+}
+
+
+
+
