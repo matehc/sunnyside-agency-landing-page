@@ -265,13 +265,13 @@ p, h3 {
 
 .service--graphics {
     background-image: image-set(
-    url("../images/mobile/image-graphic-design.jpg") 1x);
+    url("./../images/mobile/image-graphic-design.jpg") 1x);
     
 }
 
 .service--photography {
     background-image: image-set(
-    url("../images/mobile/image-photography.jpg") 1x);
+    url("./../images/mobile/image-photography.jpg") 1x);
     
 }
 
