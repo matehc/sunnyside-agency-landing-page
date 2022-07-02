@@ -87,8 +87,7 @@ p {
     left: 0;
     width: 100%;
     min-height: 100vh;    
-    background-image: image-set(
-    url("../images/mobile/image-header.jpg") 1x);
+    background-image: url("./../images/mobile/image-header.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,14 +199,12 @@ p {
 }
 
 .service--graphics {
-    background-image: image-set(
-    url("./../images/mobile/image-graphic-design.jpg") 1x);
+    background-image: url("./../images/mobile/image-graphic-design.jpg");
     
 }
 
 .service--photography {
-    background-image: image-set(
-    url("./../images/mobile/image-photography.jpg") 1x);
+    background-image: url("./../images/mobile/image-photography.jpg");
     
 }
 
