@@ -16,14 +16,6 @@ body {
     font-size: 18px;
 }
 
-
-
-
-
-/* a:link, a:visited, a:active {
-    color: black;
-} */
-
 :root {
     /*================== VARIABLES =================*/
 
@@ -34,7 +26,7 @@ body {
     --yellow: hsl(51, 100%, 49%);
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-cyan: hsl(168, 34%, 65%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
 
     /* NEUTRAL */
     --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -55,7 +47,7 @@ h1, h2 , .learn-more{
     line-height: 1.1;
 }
 /* I MIGHT REFACTOR CODE BELOW*/ 
-p, h3 {
+p {
     color: var(--Grayish-blue);
 }
 
@@ -82,14 +74,13 @@ p, h3 {
 .hero__title {
     color: var(--White);
     font-size: 2.3rem;
-    letter-spacing: .44rem;
+    letter-spacing: 8px;
     text-align: center;
-    margin-top: 3.2em;
+    margin-top: 140px;
     text-transform: uppercase;
 }
 
 
-/* Need to make image responsive  */
 .hero__img {
     position: absolute;
     top: 0;
@@ -108,7 +99,7 @@ p, h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 3.33em;
+    width: 60px;
     position:absolute;
     bottom: 25%;
     left: 50%;
@@ -119,79 +110,24 @@ p, h3 {
 
 .nav {
    display: flex;
-   align-items: center;
    justify-content: space-between;
+   /* add padding on parent so logo and menu doesn't touch */
 }
 
 .nav__list {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     position: absolute;
-    top: 10%;
-    width: 88%;
-    height: 40vh;
-    background-color: var(--White);
-    z-index: 90;
-}
-
-.nav__list::after {
-    position: absolute;
-    top: -1.3em;
-    right: 0px;
-    width: 0;
-    height: 0;
-    content: " ";
-    display: block;
-
-    border-top: 25px solid transparent;
-    border-right: 20px solid white;
-    border-bottom: 25px solid transparent;
-}
-
-.h-list {
-    margin-top: 1.66em;
-    border-radius: 1.11rem;
-    padding: .44em 1.11em;
-    text-align: center;
-}
-
-.h-list.active {
-    background-color: var(--yellow);
-}
-
-.h-nav-link {
-    color: var(--Dark-grayish-blue);
-}
-
-.menu {
-    text-align: center;
-    cursor: pointer;
-}
-
-
-.hide {
+    right: 0;
+    top: 0;
     display: none;
+    transform: translateX(100%);
 }
-
-.close__icon {
-    display: inline-block;
-    font-size: 1.77em;
-    text-align: center;
-    color: var(--White);
-    cursor: pointer;
-}
-
-
 
 .media {
     text-align: center;
 }
 
 .media__title {
-    margin-bottom: 1.11em;
+    margin-bottom: 20px;
 }
 
 
@@ -219,18 +155,18 @@ p, h3 {
     display: inline-block;
     width: auto;
     cursor: pointer;
-    margin-top: 1.11em;
+    margin-top: 20px;
     text-transform: uppercase;
 }
 
 .learn-more::after {
     content: "";
     display: block;
-    height: .44em;
+    height: 8px;
     width: inherit;
     background-color: pink;
-    border-radius: .55rem;
-    margin: -0.27em;
+    border-radius: 10px;
+    margin: -5px;
 }
 
 
