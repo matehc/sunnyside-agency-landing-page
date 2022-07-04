@@ -365,10 +365,17 @@ footer {
     margin-left: 1.66em;
 }
 
-.logo,.ft-link, .social-icon {
+.ft-link, .social-icon {
     color: var(--dark-desaturated-cyan);
 }
 
+.logo {
+    color: var(--dark-desaturated-cyan);
+}
+
+.footer__logo{
+    fill: currentColor;
+}
 
 .hide {
     display: none;
